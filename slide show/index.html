@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide show</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .slideshow {
+            position: relative;
+            width: 590px;
+            height: 470px;
+            margin: 100px auto;
+        }
+        
+        .slideshow a img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .arrow_l,
+        .arrow_r {
+            position: absolute;
+            top: 50%;
+            margin-top: -9px;
+            width: 18px;
+            height: 26px;
+            background-color: rgba(0, 0, 0, .5);
+            line-height: 26px;
+            color: #fff;
+        }
+        
+        .arrow_l {
+            left: 0;
+            text-align: left;
+            border-top-right-radius: 13px;
+            border-bottom-right-radius: 13px;
+        }
+        
+        .arrow_r {
+            right: 0;
+            text-align: right;
+            border-top-left-radius: 13px;
+            border-bottom-left-radius: 13px;
+        }
+        
+        .ads {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 38px;
+            height: 20px;
+            background-color: rgba(0, 0, 0, .5);
+            border-top-left-radius: 30px;
+            font-size: 13px;
+            font-weight: lighter;
+            text-align: center;
+            line-height: 20px;
+            color: #fff;
+        }
+        
+        .circle {
+            position: absolute;
+            bottom: 10px;
+            left: 30px;
+            width: 116px;
+            height: 16px;
+            background-color: transparent;
+        }
+        
+        .circle li {
+            float: left;
+            width: 10px;
+            height: 10px;
+            background-color: rgb(133, 130, 130);
+            border-radius: 50%;
+            margin: 2px;
+        }
+        
+        .circle .current {
+            background-color: #fff
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slideshow">
+        <a href="javascript:;">
+            <img src="image/background photo.webp" alt="">
+        </a>
+        <a href="javascript:;" class="arrow_l">&lt</a>
+        <a href="javascript:;" class="arrow_r">&gt</a>
+        <a href="javascript:;" class="ads">ads</a>
+        <ul class="circle">
+            <a href="javascript:;">
+                <li></li>
+            </a>
+            <a href="javascript:;">
+                <li class="current"></li>
+            </a>
+            <a href="javascript:;">
+                <li></li>
+            </a>
+            <a href="javascript:;">
+                <li></li>
+            </a>
+            <a href="javascript:;">
+                <li></li>
+            </a>
+            <a href="javascript:;">
+                <li></li>
+            </a>
+            <a href="javascript:;">
+                <li></li>
+            </a>
+            <a href="javascript:;">
+                <li></li>
+            </a>
+        </ul>
+    </div>
+</body>
+
+</html>
