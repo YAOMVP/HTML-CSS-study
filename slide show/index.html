@@ -78,7 +78,6 @@
             position: absolute;
             bottom: 10px;
             left: 30px;
-            width: 116px;
             height: 16px;
             background-color: transparent;
         }
@@ -90,10 +89,18 @@
             background-color: rgb(133, 130, 130);
             border-radius: 50%;
             margin: 2px;
+            border: 2px solid transparent;
+            background-clip: content-box;
         }
         
         .circle .current {
-            background-color: #fff
+            background-color: #fff;
+            border: 2px solid rgb(133, 130, 130);
+        }
+        
+        .circle li:hover {
+            background-color: #fff;
+            border: 2px solid rgb(133, 130, 130);
         }
     </style>
 </head>
