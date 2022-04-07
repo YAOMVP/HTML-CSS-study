@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        /* transition */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box1 {
+            width: 800px;
+            height: 800px;
+            background-color: silver;
+            overflow: hidden;
+        }
+        
+        .box1 div {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 100px;
+            margin-left: 0;
+        }
+        
+        .box2 {
+            background-color: #bfa;
+            /* transition: all 2s; */
+            /* transition-property:指定执行过渡的属性 width，height; 
+            多个属性用 ， 隔开，多的话也可写all
+            */
+            /* transition-duration: 指定执行过渡的时间; s和ms */
+            transition-property: all;
+            transition-duration: 2s;
+            /* transition-timing-function:过渡时序函数 执行方式 ; */
+            /* transition-timing-function: ease; */
+            /* ease 默认值 逐渐慢
+               linear 匀速的
+               ease-in 加速
+               ease-out 减速
+               ease-in-out先加后减 
+               cubic-bezier（） 贝塞尔曲线  http://cubic-bezier.com   网页左下角copy值
+               steps（2）分步执行过渡效果 ，跳了2次完成效果
+                */
+            /* transition-delay: 过渡效果的延迟 ;  等待2s后出发*/
+            transition-delay: 2s;
+            /* 简写属性：（如果要写延迟，两个时间中的第一个是持续时间，第二个是延迟） */
+            transition: 2s margin-left 1s;
+        }
+        
+        .box3 {
+            background-color: orange;
+        }
+        
+        .box1:hover div {
+            width: 200px;
+            height: 200px;
+            margin-left: 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+</body>
+
+</html>
